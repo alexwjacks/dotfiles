@@ -1,4 +1,3 @@
-alexjacks@Macintosh-25 in ~ : cd dotfiles
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -67,5 +66,3 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Library/Frameworks/Py
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 PROMPT="%F{green}%n%F{white}@%F{green}%m%F{white} in%F{yellow} %~ : %F{white}"
-                                                                                   69,25         Bot
- Macintosh 0:vim*                                                      | 15:40 2013/12/21 | [85%] ▆
