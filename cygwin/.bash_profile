@@ -25,7 +25,7 @@ alias workspace='cd /cygdrive/c/Users/ajacks/TSK'
 alias cdtsk='cd /cygdrive/c/Users/ajacks/TSK/sleuthkit'
 alias cdautopsy='cd /cygdrive/c/Users/ajacks/TSK/autopsy'
 alias branding='git checkout branding'
-alias ls='ls --color'
+alias ls='ls -F --color'
 tmux
 tmux unbind C-b
 tmux set -g prefix C-a
