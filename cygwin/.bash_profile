@@ -26,6 +26,9 @@ alias cdtsk='cd /cygdrive/c/Users/ajacks/TSK/sleuthkit'
 alias cdautopsy='cd /cygdrive/c/Users/ajacks/TSK/autopsy'
 alias branding='git checkout branding'
 alias ls='ls -F --color'
+# note - shouldn't call tmux in .bash_profile, beacuse it tries to load 
+# a new session each time a new pane is made. should reference .tmux_conf
+# instead, but I'm lazy.
 tmux
 tmux unbind C-b
 tmux set -g prefix C-a
