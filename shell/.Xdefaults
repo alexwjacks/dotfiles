@@ -42,4 +42,4 @@ urxvt*color13:    #6c71c4
 urxvt*color14:    #93a1a1
 urxvt*color15:    #fdf6e3
 
-urxvt.font: xft:terminus:size=8
+urxvt.font: xft:terminus:size:12
