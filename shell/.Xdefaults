@@ -3,6 +3,7 @@ urxvt*background: #1C1C1C
 urxvt*transparent: true
 urxvt*tintColor: #002b36
 urxvt*scrollBar: false
+urxvt*loginShell: true
 ! Normal
 ! color0    black
 ! color1    red
