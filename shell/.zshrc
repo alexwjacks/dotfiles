@@ -68,4 +68,4 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Library/Frameworks/Py
 PROMPT="%F{green}%n%F{white}@%F{green}%m%F{white} in%F{yellow} %~ : %F{white}"
 export TERM=rxvt-unicode
 tmux
-tmux source-file ~/dotfiles/.tmux.conf
+tmux source-file ~/dotfiles/tmuxConf/.tmux.conf
