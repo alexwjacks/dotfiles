@@ -1,0 +1,45 @@
+urxvt*foreground: #c5c5c5
+urxvt*background: #1C1C1C
+urxvt*transparent: true
+urxvt*tintColor: #002b36
+urxvt*scrollBar: false
+urxvt*loginShell: true
+! Normal
+! color0    black
+! color1    red
+! color2    green
+! color3    yellow
+! color4    blue
+! color5    purple
+! color6    cyan
+! color7    white
+
+urxvt*color0:    #073642
+urxvt*color1:    #d30102
+urxvt*color2:    #859900
+urxvt*color3:    #b58900
+urxvt*color4:    #268bd2
+urxvt*color5:    #d33682
+urxvt*color6:    #2aa198
+urxvt*color7:    #eee8d5
+
+! Light
+! color8    black
+! color9    red
+! color10    green
+! color11    yellow
+! color12    blue
+! color13    purple
+! color14    cyan
+! color15    white
+
+urxvt*color8:    #002b36
+urxvt*color9:    #cb4b16
+urxvt*color10:    #586e75
+urxvt*color11:    #657b83
+urxvt*color12:    #839496
+urxvt*color13:    #6c71c4
+urxvt*color14:    #93a1a1
+urxvt*color15:    #fdf6e3
+
+urxvt.font: xft:terminus:size:12

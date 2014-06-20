@@ -1,0 +1,9 @@
+background yes
+out_to_console yes
+out_to_x no
+update_interval 1.0
+total_run_times 0
+use_spacer none
+
+TEXT
+${font terminus:size=16}${time %a %b %d %I:%M%P} Battery: ${battery_percent}% CPU: ${cpu}% 

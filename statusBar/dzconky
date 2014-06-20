@@ -1,0 +1,6 @@
+#!/bin/sh
+
+FG='#c5c5c5'
+BG='#01586e'
+FONT='-*-terminus-*-r-normal-*-*-120-*-*-*-*-iso8859-*'
+conky -c ~/dotfiles/.conkyrc | dzen2 -h '16' -w '600' -ta l -fg $FG -bg $BGG -fn $FONT &
