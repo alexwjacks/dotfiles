@@ -1,5 +1,4 @@
 set t_Co=256
-colorscheme molokai
 set nocp
 execute pathogen#infect()
 syntax on
@@ -12,3 +11,6 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 set virtualedit=onemore
+set background=dark
+colorscheme solarized 
+filetype indent on
