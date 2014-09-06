@@ -20,23 +20,19 @@ echo -ne '\e]4;15;#fdf6e3\a'  # bold white
 echo -ne '\e]10;#fdf6e3\a'  # foreground
 echo -ne '\e]11;#002b36\a'  # background
 echo -ne '\e]12;#859900\a'  # cursor
-alias ajacks='cd /cygdrive/c/Users/ajacks/'
-alias workspace='cd /cygdrive/c/Users/ajacks/TSK'
-alias cdtsk='cd /cygdrive/c/Users/ajacks/TSK/sleuthkit'
-alias cdautopsy='cd /cygdrive/c/Users/ajacks/TSK/autopsy'
-alias branding='git checkout branding'
 alias ls='ls -F --color'
+alias forutne="/usr/games/fortune"
 # note - shouldn't call tmux in .bash_profile, beacuse it tries to load 
 # a new session each time a new pane is made. should reference .tmux_conf
 # instead, but I'm lazy.
-tmux
-tmux unbind C-b
-tmux set -g prefix C-a
+#tmux
+#tmux unbind C-b
+#tmux set -g prefix C-a
 #bind a send-prefix
-tmux set -g mouse-select-pane on
-tmux set -g mode-mouse on
-tmux set -g mouse-select-window on
-tmux set -g base-index 1
-tmux setw -g monitor-activity on
-tmux set -g visual-activity on
-workspace
+#tmux set -g mouse-select-pane on
+#tmux set -g mode-mouse on
+#tmux set -g mouse-select-window on
+#tmux set -g base-index 1
+#tmux setw -g monitor-activity on
+#tmux set -g visual-activity on
+#workspace

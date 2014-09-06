@@ -11,6 +11,5 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 set virtualedit=onemore
-set background=dark
-colorscheme solarized 
+colorscheme desert
 filetype indent on

@@ -1,45 +1,59 @@
-urxvt*foreground: #c5c5c5
-urxvt*background: #1C1C1C
+! common
+#define S_yellow #b58900
+#define S_orange #cb4b16
+#define S_red #dc332f
+#define S_magenta #d33682
+#define S_violet #6c71c4
+#define S_blue #268bd2
+#define S_cyan #2aa198
+#define S_green #859900
+
+! dark
+#define S_base03 #002b36
+#define S_base02 #073642
+#define S_base01 #586e75
+#define S_base00 #657b83
+#define S_base0  #839496
+#define S_base1  #93a1a1
+#define S_base2  #eee8d5
+#define S_base3  #fdf6e3
+
+! light
+!#define S_base03 #fdf6e3
+!#define S_base02 #eee8d5
+!#define S_base01 #93a1a1
+!#define S_base00 #839496
+!#define S_base0  #657b83
+!#define S_base1  #586e75
+!#define S_base2  #073642
+!#define S_base3  #002b36
+
+urxvt*foreground: S_base03
+urxvt*background: S_base0
+urxvt*fading: 40
+urxvt*fadeColor: S_base03
+urxvt*cursorColor: S_base1
+urxvt*pointerColorBackgroud: S_base01
+urxvt*pointerColorForeground: S_base1
 urxvt*transparent: true
 urxvt*tintColor: #002b36
 urxvt*scrollBar: false
 urxvt*loginShell: true
-! Normal
-! color0    black
-! color1    red
-! color2    green
-! color3    yellow
-! color4    blue
-! color5    purple
-! color6    cyan
-! color7    white
 
-urxvt*color0:    #073642
-urxvt*color1:    #d30102
-urxvt*color2:    #859900
-urxvt*color3:    #b58900
-urxvt*color4:    #268bd2
-urxvt*color5:    #d33682
-urxvt*color6:    #2aa198
-urxvt*color7:    #eee8d5
+urxvt*color0: S_base02
+urxvt*color1: S_red
+urxvt*color2: S_green
+urxvt*color3: S_yellow
+urxvt*color4: S_blue
+urxvt*color5: S_magenta
+urxvt*color6: S_cyan
+urxvt*color7: S_base2
+urxvt*color8: S_base03
+urxvt*color9: S_orange
+urxvt*color10: S_base01
+urxvt*color11: S_base00
+urxvt*color12: S_base0
+urxvt*color13: S_violet
+urxvt*color14: S_base1
+urxvt*color15: S_base3
 
-! Light
-! color8    black
-! color9    red
-! color10    green
-! color11    yellow
-! color12    blue
-! color13    purple
-! color14    cyan
-! color15    white
-
-urxvt*color8:    #002b36
-urxvt*color9:    #cb4b16
-urxvt*color10:    #586e75
-urxvt*color11:    #657b83
-urxvt*color12:    #839496
-urxvt*color13:    #6c71c4
-urxvt*color14:    #93a1a1
-urxvt*color15:    #fdf6e3
-
-urxvt.font: xft:terminus:size:12

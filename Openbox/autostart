@@ -1,0 +1,7 @@
+#use feh to set background
+#feh ~/image.jpg - need a background
+#some sort of dock
+#dockey?
+feh --bg-scale ~/bastion.jpg &
+tint2 &
+xcompmgr -c -C
