@@ -1,6 +1,13 @@
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/syntastic'
+call vundle#end()
 set t_Co=256
 set nocp
-execute pathogen#infect()
 syntax on
 set title
 set ruler
@@ -12,4 +19,5 @@ set shiftwidth=4
 set expandtab
 set virtualedit=onemore
 colorscheme desert
-filetype indent on
+let g:syntastic_check_on_open=1
+let g:syntastic_enable_sings=1
