@@ -18,6 +18,7 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 set virtualedit=onemore
+set number
 colorscheme desert
 let g:syntastic_check_on_open=1
 let g:syntastic_enable_sings=1
