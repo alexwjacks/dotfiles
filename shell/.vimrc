@@ -26,3 +26,4 @@ set number
 colorscheme desert
 let g:syntastic_check_on_open=1
 let g:syntastic_enable_sings=1
+let &colorcolumn=80
