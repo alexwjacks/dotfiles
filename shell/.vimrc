@@ -3,6 +3,10 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'chrisbra/Colorizer'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'Valloric/YouCompleteMe'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
 call vundle#end()
