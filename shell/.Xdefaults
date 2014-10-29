@@ -1,7 +1,7 @@
 ! common
 #define S_yellow #b58900
 #define S_orange #cb4b16
-#define S_red #dc332f
+#define S_red #a6000
 #define S_magenta #d33682
 #define S_violet #6c71c4
 #define S_blue #268bd2
@@ -19,14 +19,14 @@
 #define S_base3  #fdf6e3
 
 ! light
-!#define S_base03 #fdf6e3
-!#define S_base02 #eee8d5
-!#define S_base01 #93a1a1
-!#define S_base00 #839496
-!#define S_base0  #657b83
-!#define S_base1  #586e75
-!#define S_base2  #073642
-!#define S_base3  #002b36
+#define S_base03 #fdf6e3
+#define S_base02 #eee8d5
+#define S_base01 #93a1a1
+#define S_base00 #839496
+#define S_base0  #657b83
+#define S_base1  #586e75
+#define S_base2  #073642
+#define S_base3  #002b36
 
 urxvt*foreground: S_base03
 urxvt*background: S_base0
@@ -39,7 +39,7 @@ urxvt*transparent: true
 urxvt*tintColor: #002b36
 urxvt*scrollBar: false
 urxvt*loginShell: true
-
+urxvt*font: xft:Terminus:pixelsize=12,xft:Inconsolata\ for\ Powerline:pixelsize=12;
 urxvt*color0: S_base02
 urxvt*color1: S_red
 urxvt*color2: S_green

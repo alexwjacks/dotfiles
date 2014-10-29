@@ -4,4 +4,5 @@
 #dockey?
 feh --bg-scale ~/bastion.jpg &
 tint2 &
+amixer -c 1
 xcompmgr -c -C
