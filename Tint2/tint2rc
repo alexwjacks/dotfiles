@@ -31,7 +31,7 @@ panel_dock = 0
 wm_menu = 0
 panel_layer = top
 panel_background_id = 1
-panel_items = LTSBC
+panel_items = LTBC
 
 # Panel Autohide
 autohide = 0
@@ -106,7 +106,7 @@ mouse_scroll_up = toggle
 mouse_scroll_down = iconify
 
 # Battery
-battery = 1
+battery = 2
 battery_low_status = 10
 battery_low_cmd = notify-send "battery low"
 battery_hide = 98
