@@ -20,4 +20,5 @@ ruby
 scala
 tmux
 tint2
+vim
 zsh
