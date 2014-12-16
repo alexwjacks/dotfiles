@@ -68,6 +68,6 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Library/Frameworks/Py
 PROMPT="%F{green}%n%F{white}@%F{green}%m%F{white} in%F{yellow} %~ : %F{white}"
 export TERM=rxvt-unicode
 export PATH=$PATH:~/scripts/
-alias urxvt = xrdb ~/.Xdefaults && urxvt
+alias urxvt=xrdb ~/.Xdefaults && urxvt
 tmux
 tmux source-file ~/dotfiles/tmuxConf/.tmux.conf

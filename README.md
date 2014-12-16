@@ -6,4 +6,6 @@ TODO: ADD REPO MAKES / INSTALLS TO AUTOMATION
 
 usage: mkdir ~/Repos, clone this to ~/Repos/dotfiles, cd ~ and run:
 
-sh Repos/dotfiles/install.sh "youremailhere"
+sudo sh Repos/dotfiles/install.sh "youremailhere"
+
+RUN AS SUDO. If you don't, you'll constantly be bothered to confirm choices, ie whether or not to install each package.
