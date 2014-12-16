@@ -16,3 +16,5 @@ cd ~/.vim/bundle/YouCompleteMe
 git submodule update --init --recursive
 ./install.sh
 
+cd ../../../Repos/cool-retro-term
+qmake && make

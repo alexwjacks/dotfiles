@@ -9,3 +9,4 @@ git@github.com:alexjacks92/circleSynth.git
 git@github.com:alexjacks92/dotfiles.git
 git@github.com:robbyrussell/oh-my-zsh.git
 git@github.com:gmarik/Vundle.vim.git
+git@github.com:Swordfish90/cool-retro-term.git
