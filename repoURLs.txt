@@ -1,31 +1,11 @@
-  Fetch URL: https://github.com/mlutfy/hidetopbar.git
-  Fetch URL: https://github.com/Homebrew/linuxbrew
-  Fetch URL: https://github.com/lemonboy/bar.git
-  Fetch URL: https://github.com/baskerville/sutils.git
-  Fetch URL: https://github.com/baskerville/xtitle.git
-  Fetch URL: https://github.com/baskerville/bspwm.git
-  Fetch URL: git://github.com/keplerproject/luarocks.git
-  Fetch URL: https://github.com/baskerville/sxhkd.git
-  Fetch URL: https://github.com/alexjacks92/circleSynth.git
-  Fetch URL: https://github.com/alexjacks92/dotfiles.git
-  Fetch URL: https://github.com/robbyrussell/oh-my-zsh.git
-  Fetch URL: https://github.com/scrooloose/syntastic.git
-  Fetch URL: https://github.com/scrooloose/nerdtree.git
-  Fetch URL: https://github.com/davidhalter/jedi.git
-  Fetch URL: https://github.com/davidhalter/jedi-vim.git
-  Fetch URL: https://github.com/jbevain/cecil.git
-  Fetch URL: https://github.com/icsharpcode/NRefactory.git
-  Fetch URL: https://github.com/nosami/OmniSharpServer
-  Fetch URL: https://github.com/defnull/bottle
-  Fetch URL: https://github.com/bewest/argparse
-  Fetch URL: https://github.com/slezica/python-frozendict
-  Fetch URL: https://github.com/Pylons/waitress
-  Fetch URL: https://github.com/davidhalter/jedi
-  Fetch URL: https://github.com/Valloric/ycmd
-  Fetch URL: https://github.com/ross/requests-futures
-  Fetch URL: https://github.com/kennethreitz/requests
-  Fetch URL: https://github.com/Valloric/YouCompleteMe.git
-  Fetch URL: https://github.com/chrisbra/Colorizer.git
-  Fetch URL: https://github.com/gmarik/Vundle.vim.git
-  Fetch URL: https://github.com/jistr/vim-nerdtree-tabs.git
-  Fetch URL: https://github.com/flazz/vim-colorschemes.git
+git@github.com:Homebrew/linuxbrew.git
+git@github.com:lemonboy/bar.git
+git@github.com:baskerville/sutils.git
+git@github.com:baskerville/xtitle.git
+git@github.com:baskerville/bspwm.git
+git@github.com:keplerproject/luarocks.git
+git@github.com:baskerville/sxhkd.git
+git@github.com:alexjacks92/circleSynth.git
+git@github.com:alexjacks92/dotfiles.git
+git@github.com:robbyrussell/oh-my-zsh.git
+git@github.com:gmarik/Vundle.vim.git
