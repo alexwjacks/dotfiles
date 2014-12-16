@@ -1,6 +1,8 @@
 audacity
+clang
 clojure1.2
 clojure1.4
+cmake
 compiz
 conky
 feh
@@ -14,6 +16,7 @@ openbox
 python
 python2.7
 python3
+python-dev
 rxvt-unicode
 rxvt-unicode-256color
 ruby
