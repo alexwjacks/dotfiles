@@ -3,3 +3,7 @@ can be used on OSX systems or in Cygwin for Windows.
 
 TODO: ADD BSPWM INSTALL TO AUTOMATION
 TODO: ADD REPO MAKES / INSTALLS TO AUTOMATION
+
+usage: mkdir ~/Repos, clone this to ~/Repos/dotfiles, cd ~ and run:
+
+sh Repos/dotfiles/install.sh "youremailhere"
