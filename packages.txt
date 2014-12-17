@@ -38,3 +38,11 @@ libqt5qml-graphicaleffects
 qtdeclarative5-dialogs-plugin
 qtdeclarative5-localstorage-plugin
 qtdeclarative5-window-plugin
+
+xcb
+libxcb-util0-dev
+libxcb-ewmh-dev
+libxcb-randr0-dev
+libxcb-icccm4-dev
+libxcb-keysyms1-dev
+libxcb-xinerama0-dev

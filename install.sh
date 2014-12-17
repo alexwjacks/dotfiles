@@ -67,6 +67,25 @@ echo
 cd ../../../Repos/cool-retro-term
 qmake && make
 
+cd ../bspwm
+make && sudo make install
+
+mkdir ~/.config/sxhkd
+ln -s ~/Repos/dotfiles/bspwm/bspwmrc ~/.config/bspwm/bspwmrc
+
+cd ../sxhkd
+make && sudo make install
+ln -s ~/Repos/dotfiles/bspwm/sxhkdrc ~/.config/sxhkd/sxhkdrc
+
+cd ../bar
+make && sudo make install
+
+cd ../sutils
+make && sudo make install
+
+cd ../xtitle
+make && sudo make install
+
 echo
 echo "Set up is complete."
 echo
