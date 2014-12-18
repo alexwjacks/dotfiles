@@ -12,9 +12,9 @@ ssh-add ~/.ssh/id_rsa
 echo "Go add ssh key to your github. See help.github.com/articles/generating-ssh-keys."
 echo "Press any key to continue."
 echo
-
 read -n 1 -s
 
+vim ~/.ssh/id_rsa.pub
 
 # install packages from packages.txt, and pull down repos from repoURLs.txt
 
