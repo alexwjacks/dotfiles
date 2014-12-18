@@ -6,6 +6,7 @@ cmake
 compiz
 conky
 curl
+dmenu
 feh
 git
 htop
