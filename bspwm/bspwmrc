@@ -16,7 +16,7 @@ bspc rule -a Chromium desktop=^2
 bspc rule -a mplayer2 floating=on
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
-~/scripts/panel &
-feh --bg-scale ~/crystal_light-wide.jpg
+#~/scripts/panel &
+feh --bg-scale ~/Pictures/geo.png
 xcompmgr -c -C
-rxdb ~/.Xdefaults
+xrdb ~/.Xdefaults

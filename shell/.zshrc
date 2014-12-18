@@ -69,5 +69,6 @@ PROMPT="%F{green}%n%F{white}@%F{green}%m%F{white} in%F{yellow} %~ : %F{white}"
 export TERM=rxvt-unicode
 export PATH=$PATH:~/scripts/
 alias urxvt=xrdb ~/.Xdefaults && urxvt
+alias cddot=cd ~/Repos/dotfiles
 tmux
-tmux source-file ~/dotfiles/tmuxConf/.tmux.conf
+tmux source-file ~/Repos/dotfiles/tmuxConf/.tmux.conf

@@ -5,6 +5,7 @@ clojure1.4
 cmake
 compiz
 conky
+curl
 feh
 git
 htop
