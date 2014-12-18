@@ -86,6 +86,16 @@ make && sudo make install
 cd ../xtitle
 make && sudo make install
 
+# set up slim to replace gdm
+sudo rm /etc/slim.conf 
+sudo ln -s ~/Repos/dotfiles/slim.conf /etc/slim.conf
+
+sudo cp  ~/Repos/bspwm/contrib/lightdm/bspwm-session ~/Repos/dotfiles/bspwm/bspwm-session
+
+sudo ln -s ~/Repos/dotfiles/bspwm/bspwm-session /usr/share/xsessions/bspwm-session
+
+
+
 echo
 echo "Set up is complete."
 echo
