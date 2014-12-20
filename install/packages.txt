@@ -29,6 +29,7 @@ scala
 tmux
 tint2
 vim
+xfonts-terminus
 zsh
 
 
