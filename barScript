@@ -1,0 +1,16 @@
+#!/bin/bash
+
+prep () {
+    while true; do
+        dateNow=$(date +"%I:%M")
+        #echo ${dateNow}
+        title=$(xtitle)
+        intoBar="%{c}${title}%{r}${dateNow}"
+        echo ${intoBar}
+        sleep 5
+    done
+}
+
+
+prep | bar -B "#ff242A36" -F "#ff7C8AA3"
+

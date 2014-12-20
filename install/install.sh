@@ -94,7 +94,7 @@ sudo cp  ~/Repos/bspwm/contrib/lightdm/bspwm-session ~/Repos/dotfiles/bspwm/bspw
 
 sudo ln -s ~/Repos/dotfiles/bspwm/bspwm-session /usr/share/xsessions/bspwm-session
 
-
+sudo ln -s ~/Pictures/geo.png ~/Repos/geo.png
 
 echo
 echo "Set up is complete."

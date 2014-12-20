@@ -3,11 +3,14 @@ clang
 clojure1.2
 clojure1.4
 cmake
+cmus
 compiz
+compton
 conky
 curl
 dmenu
 feh
+gimp
 git
 htop
 leiningen
