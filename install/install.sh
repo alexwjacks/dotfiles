@@ -1,5 +1,14 @@
 #!/usr/bin/env bash
 
+# install packages from packages.txt
+
+echo 
+echo "Installing packages listed in packaget.txt."
+echo
+cd ~/Repos
+python dotfiles/installPackages.py
+
+
 echo
 echo "Generating ssh key for github."
 echo
@@ -12,18 +21,11 @@ ssh-add ~/.ssh/id_rsa
 echo "Go add ssh key to your github. See help.github.com/articles/generating-ssh-keys."
 echo "Press any key to continue."
 echo
-
 read -n 1 -s
 
+vim ~/.ssh/id_rsa.pub
 
-# install packages from packages.txt, and pull down repos from repoURLs.txt
-
-echo 
-echo "Installing packages listed in packaget.txt."
-echo
-cd ~/Repos
-python dotfiles/installPackages.py
-
+# pull down repos from repoURLs.txt
 echo
 echo "Installing repos listed in repoURLs.txt."
 echo
