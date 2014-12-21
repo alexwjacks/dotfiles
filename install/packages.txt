@@ -12,6 +12,7 @@ dmenu
 feh
 gimp
 git
+golang
 htop
 leiningen
 love
@@ -26,6 +27,8 @@ rxvt-unicode
 rxvt-unicode-256color
 ruby
 scala
+libsdl-image1.2-dev
+sdl1.2
 tmux
 tint2
 vim

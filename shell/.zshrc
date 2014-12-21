@@ -53,6 +53,8 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/X11/bin:/Users/alexjacks/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
+export GOPATH="$HOME/Go"
+
 # # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
@@ -65,10 +67,10 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Library/Frameworks/Py
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
-PROMPT="%F{green}%n%F{white}@%F{green}%m%F{white} in%F{yellow} %~ : %F{white}"
+PROMPT="%F{green}%n%F{white}@%F{green}%m%F{white} in%F{yellow} %~ : %F{black}"
 export TERM=rxvt-unicode
 export PATH=$PATH:~/scripts/
 alias urxvt=xrdb ~/.Xdefaults && urxvt
 alias cddot=cd ~/Repos/dotfiles
-tmux
-tmux source-file ~/Repos/dotfiles/tmuxConf/.tmux.conf
+#tmux
+#tmux source-file ~/Repos/dotfiles/tmuxConf/.tmux.conf
