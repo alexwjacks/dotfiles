@@ -72,6 +72,8 @@ qmake && make
 cd ~/Repos
 mv zsh-syntax-hilighting ~/.oh-my-zsh/custom/plugins/
 
+mv linuxbrew ~/.linuxbrew
+
 cd ../bspwm
 make && sudo make install
 
