@@ -67,7 +67,7 @@ export GOPATH="$HOME/Go"
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
-PROMPT="%F{green}%n%F{white}@%F{green}%m%F{white} in%F{yellow} %~ : %F{black}"
+PROMPT="%F{green}%n%F{white}@%F{green}%m%F{white} in%F{yellow} %~ : %F{white}"
 export TERM=rxvt-unicode
 export PATH=$PATH:~/scripts/
 alias urxvt=xrdb ~/.Xdefaults && urxvt
