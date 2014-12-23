@@ -67,10 +67,10 @@ export GOPATH="$HOME/Go"
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
-PROMPT="%F{green}%n%F{white}@%F{green}%m%F{white} in%F{yellow} %~ : %F{white}"
+PROMPT="%F{green}%n%F{white}@%F{green}%m%F{white} in%F{yellow} %~ : %F{blue}"
 export TERM=rxvt-unicode
 export PATH=$PATH:~/scripts/
-alias urxvt=xrdb ~/.Xdefaults && urxvt
-alias cddot=cd ~/Repos/dotfiles
+alias urxvt="xrdb ~/.Xdefaults && urxvt"
+alias cddot="cd ~/Repos/dotfiles"
 #tmux
 #tmux source-file ~/Repos/dotfiles/tmuxConf/.tmux.conf
