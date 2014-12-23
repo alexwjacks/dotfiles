@@ -69,6 +69,9 @@ echo
 cd ../../../Repos/cool-retro-term
 qmake && make
 
+cd ~/Repos
+mv zsh-syntax-hilighting ~/.oh-my-zsh/custom/plugins/
+
 cd ../bspwm
 make && sudo make install
 
@@ -96,7 +99,11 @@ sudo cp  ~/Repos/bspwm/contrib/lightdm/bspwm-session ~/Repos/dotfiles/bspwm/bspw
 
 sudo ln -s ~/Repos/dotfiles/bspwm/bspwm-session /usr/share/xsessions/bspwm-session
 
-sudo ln -s ~/Pictures/geo.png ~/Repos/geo.png
+sudo ln -s ~/Pictures/geo.png ~/Repos/dotfiles/geo.png
+sudo ln -s ~/Pictures/alley.jpg ~/Repos/dotfiles/alley.jpg
+xset fp+ /usr/share/fonts/X11/misc
+
+
 
 echo
 echo "Set up is complete."

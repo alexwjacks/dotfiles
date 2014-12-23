@@ -7,10 +7,17 @@ prep () {
         title=$(xtitle)
         intoBar="%{c}${title}%{r}${dateNow}"
         echo ${intoBar}
-        sleep 5
+        sleep 1
     done
 }
 
 
-prep | bar -B "#ff242A36" -F "#ff7C8AA3"
+# background is urxvt tint
+# foreground is urxvt yellow
+prep | bar -B "#99002b36" -F "#ffB58900" -f "-*-terminus-medium-*-*-*-16-*-*-*-*-*-iso10646-*"
 
+# a nice blue for the foreground, if I wanna switch it up
+#7C8AA3
+
+# different blue background
+#242A36
