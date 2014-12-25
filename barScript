@@ -1,19 +1,38 @@
 #!/bin/bash
 
+
+battery () {
+    battery=$(acpi | sed -n 's/^.*\([0-9][0-9]\).*$/\1/p')
+    echo ${battery}
+    if [ ${battery} -lt  20 ] 
+    then
+        battery="%{B#ffA60000}bat:${battery}%{B-}"   
+    else
+        battery="bat:${battery}"
+    fi
+    echo ${battery}
+}
+
+
 prep () {
     while true; do
+        separator=' | '
+        desktops=$(python ~/Repos/dotfiles/desktops.py)
+        title=$(xtitle)
+       # battery=$(acpi | sed -n 's/^.*\([0-9][0-9]%\).*$/\1/p')
+        volume=$(amixer get Master | sed -n 'N;s/^.*\[\([0-9]\+%\).*$/\1/p')
         dateNow=$(date +"%I:%M")
         #echo ${dateNow}
-        title=$(xtitle)
-        intoBar="%{c}${title}%{r}${dateNow}"
+        intoBar="%{l}${desktops}%{c}${title}%{r} vol:${volume}${separator}${battery}${separator}${dateNow}"
         echo ${intoBar}
-        sleep 1
+        sleep .2
     done
 }
 
 
 # background is urxvt tint
 # foreground is urxvt yellow
+battery
 prep | bar -B "#99002b36" -F "#ffB58900" -f "-*-terminus-medium-*-*-*-16-*-*-*-*-*-iso10646-*"
 
 # a nice blue for the foreground, if I wanna switch it up
