@@ -105,7 +105,8 @@ sudo ln -s ~/Pictures/geo.png ~/Repos/dotfiles/geo.png
 sudo ln -s ~/Pictures/alley.jpg ~/Repos/dotfiles/alley.jpg
 xset fp+ /usr/share/fonts/X11/misc
 
-
+mkdir ~/Go
+go get github.com/thefryscorer/schemer
 
 echo
 echo "Set up is complete."

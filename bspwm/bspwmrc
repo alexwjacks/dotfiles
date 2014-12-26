@@ -22,7 +22,9 @@ bspc rule -a mplayer2 floating=on
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
-bash ~/Repos/dotfiles/barScript &
-feh --bg-scale ~/Pictures/alley.jpg
+
+feh --bg-scale ~/Pictures/alley.jpg &
+barScript > ~/file.txt &
 compton -c -o 1.0 -i 1.0
 xrdb ~/.Xdefaults
+

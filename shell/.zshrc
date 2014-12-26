@@ -9,14 +9,10 @@ export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
 
 export GOPATH="$HOME/Go"
 export TERM=rxvt-unicode
-export PATH="$PATH:~/scripts/"
+export PATH="$PATH:$HOME/Go/bin"
+export PATH="$PATH:$HOME/Repos/dotfiles"
 alias urxvt="xrdb ~/.Xdefaults && urxvt"
 alias cddot="cd ~/Repos/dotfiles"
-
-
-
-
-
 
 
 source ~/Repos/antigen/antigen.zsh
