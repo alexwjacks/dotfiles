@@ -14,7 +14,6 @@ export PATH="$PATH:$HOME/Repos/dotfiles"
 alias urxvt="xrdb ~/.Xdefaults && urxvt"
 alias cddot="cd ~/Repos/dotfiles"
 
-
 source ~/Repos/antigen/antigen.zsh
 antigen use oh-my-zsh
 antigen bundle git

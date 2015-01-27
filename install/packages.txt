@@ -15,6 +15,7 @@ gimp
 git
 golang
 htop
+lamp-server^
 leiningen
 love
 numix-icon-theme

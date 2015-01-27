@@ -108,6 +108,13 @@ xset fp+ /usr/share/fonts/X11/misc
 mkdir ~/Go
 go get github.com/thefryscorer/schemer
 
+cd ~
+curl https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein > lein
+chmod 755 lein
+lein
+mv lein /bin
+
+
 echo
 echo "Set up is complete."
 echo
