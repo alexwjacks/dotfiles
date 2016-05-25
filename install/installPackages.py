@@ -1,6 +1,6 @@
 import subprocess
 
-f = open("dotfiles/packages.txt")
+f = open("dotfiles/install/packages.txt")
 for line in f:
 	print
 	print("**** NEXT PACKAGE: " + line[:-1] + " ****")

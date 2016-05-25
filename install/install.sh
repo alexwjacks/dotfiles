@@ -6,37 +6,37 @@ echo
 echo "Installing packages listed in packaget.txt."
 echo
 cd ~/Repos
-python dotfiles/installPackages.py
+python dotfiles/install/installPackages.py
 
 
-echo
-echo "Generating ssh key for github."
-echo
+#echo
+#echo "Generating ssh key for github."
+#echo
+#
+## generate ssh keys for github
+#ssh-keygen -t rsa -C $1 
+#ssh-agent -s
+#ssh-add ~/.ssh/id_rsa
 
-# generate ssh keys for github
-ssh-keygen -t rsa -C $1 
-ssh-agent -s
-ssh-add ~/.ssh/id_rsa
-
-echo "Go add ssh key to your github. See help.github.com/articles/generating-ssh-keys."
-echo "Press any key to continue."
-echo
-read -n 1 -s
-
-vim ~/.ssh/id_rsa.pub
-
+#echo "Go add ssh key to your github. See help.github.com/articles/generating-ssh-keys."
+#echo "Press any key to continue."
+#echo
+#read -n 1 -s
+#
+#vim ~/.ssh/id_rsa.pub
+#
 # pull down repos from repoURLs.txt
 echo
 echo "Installing repos listed in repoURLs.txt."
 echo
-python dotfiles/installRepos.py
+python dotfiles/install/installRepos.py
 
 # add shell links for dotfiles
 echo
 echo "Setting up links for dotfiles."
 echo
 cd ~
-python Repos/dotfiles/shellSetup.py
+python Repos/dotfiles/install/shellSetup.py
 
 # get Vundle ready for VIM setup
 echo
@@ -66,7 +66,7 @@ echo "Installing all the repos."
 echo
 
 # install repos. each has it's own way of installation, so verbosity is essential.
-cd ../../../Repos/cool-retro-term
+cd ~/Repos/cool-retro-term
 qmake && make
 
 cd ~/Repos
@@ -74,23 +74,23 @@ mv zsh-syntax-hilighting ~/.oh-my-zsh/custom/plugins/
 
 mv linuxbrew ~/.linuxbrew
 
-cd ../bspwm
+cd ~/Repos/bspwm
 make && sudo make install
 
 mkdir ~/.config/sxhkd
 ln -s ~/Repos/dotfiles/bspwm/bspwmrc ~/.config/bspwm/bspwmrc
 
-cd ../sxhkd
+cd ~/Repos/sxhkd
 make && sudo make install
 ln -s ~/Repos/dotfiles/bspwm/sxhkdrc ~/.config/sxhkd/sxhkdrc
 
-cd ../bar
+cd ~/Repos/bar
 make && sudo make install
 
-cd ../sutils
+cd ~/Repos/sutils
 make && sudo make install
 
-cd ../xtitle
+cd ~/Repos/xtitle
 make && sudo make install
 
 # set up slim to replace gdm

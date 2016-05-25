@@ -1,7 +1,7 @@
 import subprocess
 import os
 
-f = open("dotfiles/repoURLs.txt")
+f = open("dotfiles/install/repoURLs.txt")
 for line in f:
 	print()	
 	print("**** NEXT REPO IS " + line[:-1] + " ****")
