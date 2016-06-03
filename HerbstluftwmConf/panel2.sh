@@ -12,7 +12,7 @@ y=${geometry[1]}
 width=${geometry[2]}
 height=16
 font="-*-fixed-medium-*-*-*-12-*-*-*-*-*-*-*"
-bgcolor='#000000'
+bgcolor='#045f70'
 
 function uniq_linebuffered() {
     awk '$0 != l { print ; l=$0 ; fflush(); }' "$@"
