@@ -1,2 +1,2 @@
 #!/bin/bash
-feh --bg-scale ~/jirachi.jpg
+feh --bg-scale ~/dotfiles/alley.jpg
