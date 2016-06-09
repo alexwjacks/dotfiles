@@ -17,7 +17,7 @@ battery () {
 prep () {
     while true; do
         separator=' | '
-        desktops=$(python ~/dotfiles/desktopsHLWM.py)
+        desktops=$(python ~/dotfiles/desktopsHLWM.py $1)
         title=$(xtitle)
        # battery=$(acpi | sed -n 's/^.*\([0-9][0-9]%\).*$/\1/p')
         volume=$(amixer get Master | sed -n 'N;s/^.*\[\([0-9]\+%\).*$/\1/p')
@@ -32,7 +32,7 @@ prep () {
 
 
 # background is urxvt tint
-# foreground is urxvt yellow
-prep | lemonbar -g 1680x15+0+0 -B "#ff045F70" -F "#ffffffff" -f "-*-terminus-medium-*-*-*-16-*-*-*-*-*-iso10646-*"
-
+# one per monitor, adjust geometry as needed
+prep 0 | lemonbar -g 1680x15+0+0 -B "#ff045F70" -F "#ffffffff" -f "-*-terminus-medium-*-*-*-16-*-*-*-*-*-iso10646-*" &
+prep 1 | lemonbar -g 1680x15+1680+0 -B "#ff045F70" -F "#ffffffff" -f "-*-terminus-medium-*-*-*-16-*-*-*-*-*-iso10646-*" &
 # barScript for bspwm has a few other colors

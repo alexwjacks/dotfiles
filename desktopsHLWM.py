@@ -1,6 +1,7 @@
 import subprocess
+import sys
 
-call = ["herbstclient", "tag_status", "0"]
+call = ["herbstclient", "tag_status", sys.argv[1]]
 desktops = subprocess.check_output(call)
 desktop_list = desktops.split("\t")
 desktop_list = desktop_list[1:-1]
