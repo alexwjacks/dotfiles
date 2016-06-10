@@ -104,6 +104,10 @@ hc rule windowtype~'_NET_WM_WINDOW_TYPE_(DIALOG|UTILITY|SPLASH)' pseudotile=on
 hc rule windowtype='_NET_WM_WINDOW_TYPE_DIALOG' focus=on
 hc rule windowtype~'_NET_WM_WINDOW_TYPE_(NOTIFICATION|DOCK)' manage=off
 
+# give the monitor a bit of breathing room
+hc pad 0 20 5 5 5
+hc pad 1 20 5 5 5
+
 # unlock, just to be sure
 hc unlock
 
