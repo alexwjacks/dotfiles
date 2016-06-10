@@ -15,18 +15,22 @@ for desktop in desktop_list:
         # blue on yellow
         #total_string += "%{F#99002b36}%{B#ffB58900}" + desktop + "%{B-}%{F-} "
     
-        # white on green
+        # white on green, active focused tag
         total_string += "%{F#ffffffff}%{B#ff859900}" + " " + desktop[1:] + " " + "%{B-}%{F-} "
    
+        # white on green, inactive focused tag
     elif desktop[0] == '+':
         total_string += "%{F#ffffffff}%{B#ff9CA668}" + " " + desktop[1:] + " " + "%{B-}%{F-} "
    
+        # white on light blue green, unfocused inactive tag with content
     elif desktop[0] == ':':
-        total_string += "%{F#ffffffff}%{B#ff6A4100}" + " " + desktop[1:] + " " + "%{B-}%{F-} "
+        total_string += "%{F#ffffffff}%{B#ff018759}" + " " + desktop[1:] + " " + "%{B-}%{F-} "
    
+        # white on pink, tag with a notification / activity
     elif desktop[0] == '!':
         total_string += "%{F#ffffffff}%{B#ffFF0675}" + " " + desktop[1:] + " " + "%{B-}%{F-} "
    
+        # white on blue, nothing doing
     else:
         total_string += "%{F#ffffffff}%{B#ff045F70}" + " " + desktop[1:] + " " + "%{B-}%{F-} "
 print total_string
