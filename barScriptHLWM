@@ -22,11 +22,11 @@ prep () {
        # battery=$(acpi | sed -n 's/^.*\([0-9][0-9]%\).*$/\1/p')
         volume=$(amixer get Master | sed -n 'N;s/^.*\[\([0-9]\+%\).*$/\1/p')
         timeNow=$(date +"%I:%M")
-        dateNow=$(date +"%A %B %d, %Y")
+        dateNow=$(date +"%a %b %d, %Y")
         #echo ${dateNow}
         #battery
-        intoBar="%{l}${desktops}%{c}${title}%{r} vol:${volume}${separator}${timeNow}${separator}${dateNow} "
-        echo ${intoBar}
+        intoBar="%{l}${desktops}%{c}${title}%{r} \uf028 :${volume}${separator} \uf017 ${timeNow}${separator}\uf073 ${dateNow} "
+        echo -e ${intoBar}
         sleep .2
     done
 }
@@ -34,6 +34,6 @@ prep () {
 
 # background is urxvt tint
 # one per monitor, adjust geometry as needed
-prep 0 | lemonbar -g 1680x15+0+0 -B "#ff045F70" -F "#ffffffff" -f "-*-terminus-medium-*-*-*-12-*-*-*-*-*-iso10646-*" | sh &
-prep 1 | lemonbar -g 1680x15+1680+0 -B "#ff045F70" -F "#ffffffff" -f "-*-terminus-medium-*-*-*-12-*-*-*-*-*-iso10646-*" | sh &
+prep 0 | lemonbar  -g 1680x15+0+0 -B "#ff045F70" -F "#ffffffff" -f "FontAwesome:size=10" -f "-*-terminus-medium-*-*-*-12-*-*-*-*-*-iso10646-*" | sh &
+prep 1 | lemonbar  -g 1680x15+1680+0 -B "#ff045F70" -F "#ffffffff" -f "FontAwesome:size=10" -f "-*-terminus-medium-*-*-*-12-*-*-*-*-*-iso10646-*" | sh &
 # barScript for bspwm has a few other colors
