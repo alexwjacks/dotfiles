@@ -10,7 +10,7 @@ desktop_list = desktop_list[1:-1]
 total_string = ""
 
 for desktop in desktop_list:
-    clickable = "%{A:herbstclient use " + desktop[1:] + ":}"
+    clickable = "%{A:herbstclient focus_monitor " + sys.argv[1] + " && herbstclient use " + desktop[1:] + ":}"
     endclick = "%{A}"
     #print desktop
     if desktop[0] == '#': # focused desktop right now
