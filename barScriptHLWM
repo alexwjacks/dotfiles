@@ -25,7 +25,7 @@ prep () {
         dateNow=$(date +"%A %B %d, %Y")
         #echo ${dateNow}
         #battery
-        intoBar="%{l}${desktops}%{c}${title}%{r} vol:${volume}${separator}${timeNow}${separator}${dateNow} %{A:dmenu_run:}testtesttesttest%{A}  "
+        intoBar="%{l}${desktops}%{c}${title}%{r} vol:${volume}${separator}${timeNow}${separator}${dateNow} "
         echo ${intoBar}
         sleep .2
     done
