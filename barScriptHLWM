@@ -25,7 +25,7 @@ prep () {
         dateNow=$(date +"%A %B %d, %Y")
         #echo ${dateNow}
         #battery
-        intoBar="%{l}${desktops}%{c}${title}%{r} vol:${volume}${separator}${timeNow}${separator}${dateNow}   "
+        intoBar="%{l}${desktops}%{c}${title}%{r} vol:${volume}${separator}${timeNow}${separator}${dateNow} %{A:dmenu_run:}testtesttesttest%{A}  "
         echo ${intoBar}
         sleep .2
     done
@@ -34,6 +34,6 @@ prep () {
 
 # background is urxvt tint
 # one per monitor, adjust geometry as needed
-prep 0 | lemonbar -g 1680x15+0+0 -B "#ff045F70" -F "#ffffffff" -f "-*-terminus-medium-*-*-*-12-*-*-*-*-*-iso10646-*" &
-prep 1 | lemonbar -g 1680x15+1680+0 -B "#ff045F70" -F "#ffffffff" -f "-*-terminus-medium-*-*-*-12-*-*-*-*-*-iso10646-*" &
+prep 0 | lemonbar -g 1680x15+0+0 -B "#ff045F70" -F "#ffffffff" -f "-*-terminus-medium-*-*-*-12-*-*-*-*-*-iso10646-*" | sh &
+prep 1 | lemonbar -g 1680x15+1680+0 -B "#ff045F70" -F "#ffffffff" -f "-*-terminus-medium-*-*-*-12-*-*-*-*-*-iso10646-*" | sh &
 # barScript for bspwm has a few other colors
