@@ -24,7 +24,7 @@ bspc rule -a Screenkey manage=off
 
 
 feh --bg-scale ~/Pictures/alley.jpg &
-barScript > ~/file.txt &
+~/dotfiles/barScript > ~/file.txt &
 compton -c -o 1.0 -i 1.0
 xrdb ~/.Xdefaults
 
