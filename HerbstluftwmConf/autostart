@@ -86,7 +86,8 @@ hc set window_gap 3
 # color
 hc set frame_border_active_color '#000000'
 hc set frame_border_normal_color '#000000'
-hc set frame_bg_normal_color  '#045f70'
+hc set frame_bg_normal_color '#078fa8'
+#'#045f70' old normal color, darker
 hc set frame_bg_active_color '#859900'
 hc set frame_border_width 5
 hc set window_border_width 5
