@@ -24,7 +24,7 @@ hc keybind $Mod-t spawn urxvt
 hc keybind $Mod-d spawn dmenu_run -nb "#045f70" -nf "#ffffff"
 
 # tags
-TAG_NAMES=(WWW Term Dev Chat)  #( {1..9} )
+TAG_NAMES=(WWW Term Dev Chat Misc)  #( {1..9} )
 TAG_KEYS=( {1..4} 0 )
 
 hc rename default "${TAG_NAMES[0]}" || true
