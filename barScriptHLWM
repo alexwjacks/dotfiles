@@ -35,5 +35,5 @@ prep () {
 # background urxvt tint is 045f70, bit darker than this
 # one per monitor, adjust geometry as needed
 prep 0 | lemonbar  -g 1680x15+0+0 -B "#ff07778c" -F "#ffffffff" -f "FontAwesome:size=10" -f "-*-terminus-medium-*-*-*-12-*-*-*-*-*-iso10646-*" | sh &
-prep 1 | lemonbar  -g 1680x15+1680+0 -B "#ff045F70" -F "#ffffffff" -f "FontAwesome:size=10" -f "-*-terminus-medium-*-*-*-12-*-*-*-*-*-iso10646-*" | sh &
+prep 1 | lemonbar  -g 1680x15+1680+0 -B "#ff07788C" -F "#ffffffff" -f "FontAwesome:size=10" -f "-*-terminus-medium-*-*-*-12-*-*-*-*-*-iso10646-*" | sh &
 # barScript for bspwm has a few other colors

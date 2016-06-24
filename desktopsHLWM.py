@@ -34,5 +34,5 @@ for desktop in desktop_list:
    
         # white on blue, nothing doing
     else:
-        total_string += clickable + "%{F#ffffffff}%{B#ff045F70}" + " " + desktop[1:] + " " + "%{B-}%{F-} " + endclick
+        total_string += clickable + "%{F#ffffffff}%{B#ff07778C}" + " " + desktop[1:] + " " + "%{B-}%{F-} " + endclick
 print total_string
