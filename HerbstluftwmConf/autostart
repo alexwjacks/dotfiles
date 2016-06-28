@@ -22,7 +22,9 @@ hc keybind $Mod-Shift-r reload
 hc keybind $Mod-w close_or_remove
 hc keybind $Mod-t spawn urxvt
 hc keybind $Mod-d spawn dmenu_run -nb "#045f70" -nf "#ffffff"
-
+hc keybind $Mod-F1 spawn amixer sset Master toggle
+hc keybind $Mod-F2 spawn amixer sset Master 5%-
+hc keybind $Mod-F3 spawn amixer sset Master 5%+
 # tags
 TAG_NAMES=(WWW Term Dev Chat Misc)  #( {1..9} )
 TAG_KEYS=( {1..5} 0 )
