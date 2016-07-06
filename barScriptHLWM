@@ -23,9 +23,8 @@ prep () {
         volume=$(amixer get Master | sed -n 'N;s/^.*\[\([0-9]\+%\).*$/\1/p')
         timeNow=$(date +"%I:%M")
         dateNow=$(date +"%a %b %d, %Y")
-        #echo ${dateNow}
-        #battery
-        intoBar="%{l}${desktops}%{c}${title}%{r} \uf028 :${volume}${separator} \uf017 ${timeNow}${separator}\uf073 ${dateNow} "
+        music=$(python ~/dotfiles/HerbstluftwmConf/music.py)
+        intoBar="%{l}${desktops}%{c}${title}%{r} ${music} ${separator}\uf028 :${volume}${separator} \uf017 ${timeNow}${separator}\uf073 ${dateNow} "
         echo -e ${intoBar}
         sleep .2
     done
