@@ -20,11 +20,12 @@ prep () {
         desktops=$(python ~/dotfiles/desktopsHLWM.py $1)
         title=$(xtitle)
        # battery=$(acpi | sed -n 's/^.*\([0-9][0-9]%\).*$/\1/p')
-        volume=$(amixer get Master | sed -n 'N;s/^.*\[\([0-9]\+%\).*$/\1/p')
+        #volume=$(amixer get Master | sed -n 'N;s/^.*\[\([0-9]\+%\).*$/\1/p')
+        volume=$(python ~/dotfiles/HerbstluftwmConf/volume.py)
         timeNow=$(date +"%I:%M")
         dateNow=$(date +"%a %b %d, %Y")
         music=$(python ~/dotfiles/HerbstluftwmConf/music.py)
-        intoBar="%{l}${desktops}%{c}${title}%{r} ${music} ${separator}\uf028 :${volume}${separator} \uf017 ${timeNow}${separator}\uf073 ${dateNow} "
+        intoBar="%{l}${desktops}%{c}${title}%{r} ${music} ${separator}${volume}${separator} \uf017 ${timeNow}${separator}\uf073 ${dateNow} "
         echo -e ${intoBar}
         sleep .2
     done
