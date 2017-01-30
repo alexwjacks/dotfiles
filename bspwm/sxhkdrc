@@ -87,10 +87,10 @@ alt + d
 	dmenu_run
 
 super + i
-    google-chrome
+    firefox
 
-XF86AudioRaiseVolume
-    ~/Repos/dotfiles/popup Volume Up
+#XF86AudioRaiseVolume
+ #   ~/Repos/dotfiles/popup Volume Up
 
 # make sxhkd reload its configuration files:
 super + Escape

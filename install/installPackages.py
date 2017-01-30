@@ -5,5 +5,5 @@ for line in f:
 	print
 	print("**** NEXT PACKAGE: " + line[:-1] + " ****")
 	print
-	subprocess.call(["sudo", "apt-get", "install", "-y", line[:-1]])
+	subprocess.call(["sudo", "yum", "install", "-y", line[:-1]])
 print("done installing packages")
