@@ -30,13 +30,14 @@
 
 urxvt*foreground: S_base03
 urxvt*background: S_base0
-urxvt*fading: 40
+urxvt*fading: 60
 urxvt*fadeColor: S_base03
 urxvt*cursorColor: S_base1
 urxvt*pointerColorBackgroud: S_base01
 urxvt*pointerColorForeground: S_base1
 urxvt*transparent: true
-urxvt*tintColor: #002b36
+urxvt*shading: 25
+! urxvt*tintColor: #002b36
 urxvt*scrollBar: false
 urxvt*loginShell: true
 urxvt*font: xft:Terminus:pixelsize=12
