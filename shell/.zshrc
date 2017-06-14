@@ -10,10 +10,12 @@ export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
 export TERM=rxvt-unicode
 export PATH="$PATH:$HOME/Repos/dotfiles"
 alias urxvt="xrdb ~/.Xdefaults && urxvt"
+alias tmux="tmux -2"
 alias cddot="cd ~/dotfiles"
 alias cdaut="cd ~/git/anywhere-server/automation"
 alias cdbots="cd ~/git/auto-bots"
 alias cdsuites="cd ~/git/anywhere-server/automation/src/main/python/suitedefs"
+alias cdcommons="cd ~/git/auto-commons"
 
 source ~/antigen.zsh
 antigen use oh-my-zsh

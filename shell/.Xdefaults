@@ -39,7 +39,7 @@ urxvt*transparent: true
 urxvt*tintColor: #002b36
 urxvt*scrollBar: false
 urxvt*loginShell: true
-urxvt*font: xft:Terminus:pixelsize=12,xft:Inconsolata\ for\ Powerline:pixelsize=12;
+urxvt*font: xft:Terminus:pixelsize=12
 urxvt*color0: S_base02
 urxvt*color1: S_red
 urxvt*color2: S_green
