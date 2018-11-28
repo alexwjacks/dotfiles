@@ -17,14 +17,14 @@ battery () {
 prep () {
     while true; do
         separator=' | '
-        desktops=$(python ~/dotfiles/desktopsHLWM.py $1)
+        desktops=$(python ~/dotfiles/desktops.py $1)
         title=$(xtitle)
        # battery=$(acpi | sed -n 's/^.*\([0-9][0-9]%\).*$/\1/p')
-        #volume=$(amixer get Master | sed -n 'N;s/^.*\[\([0-9]\+%\).*$/\1/p')
-        volume=$(python ~/dotfiles/HerbstluftwmConf/volume.py)
+        volume=$(amixer get Master | sed -n 'N;s/^.*\[\([0-9]\+%\).*$/\1/p')
+        #volume=$(python ~/dotfiles/HerbstluftwmConf/volume.py)
         timeNow=$(date +"%I:%M")
         dateNow=$(date +"%a %b %d, %Y")
-        music=$(python ~/dotfiles/HerbstluftwmConf/music.py)
+        #music=$(python ~/dotfiles/HerbstluftwmConf/music.py)
         intoBar="%{l}${desktops}%{c}${title}%{r} ${music} ${separator}${volume}${separator} \uf017 ${timeNow}${separator}\uf073 ${dateNow} "
         echo -e ${intoBar}
         sleep .2
@@ -34,6 +34,6 @@ prep () {
 
 # background urxvt tint is 045f70, bit darker than this
 # one per monitor, adjust geometry as needed
-prep 0 | lemonbar  -g 1920x17+0+0 -B "#66000000" -F "#ff018759" -f "FontAwesome:size=10" -f "Droid Sans-8" | sh &
-prep 1 | lemonbar  -g 1920x17+1920+0 -B "#66000000" -F "#ff018759" -f "FontAwesome:size=10" -f "Droid Sans-8" | sh &
+prep 0 | lemonbar  -g 1920x17+0+0 -B "#0007778c" -F "#ff018759" -f "FontAwesome:size=10" -f "Droid Sans-8" | sh &
+prep 1 | lemonbar  -g 1920x17+1920+0 -B "#0007788C" -F "#ff018759" -f "FontAwesome:size=10" -f "Droid Sans-8" | sh &
 # barScript for bspwm has a few other colors

@@ -12,10 +12,12 @@ export PATH="$PATH:$HOME/Repos/dotfiles"
 alias urxvt="xrdb ~/.Xdefaults && urxvt"
 alias tmux="tmux -2"
 alias cddot="cd ~/dotfiles"
+alias cddev="cd ~/git/anywhere-server"
 alias cdaut="cd ~/git/anywhere-server/automation"
 alias cdbots="cd ~/git/auto-bots"
 alias cdsuites="cd ~/git/anywhere-server/automation/src/main/python/suitedefs"
 alias cdcommons="cd ~/git/auto-commons"
+alias sshdc="xfreerdp /v:autdc01.aut.aw.wal.hds.com /d:aut /u:Administrator /cert-ignore /size:1600x900"
 
 source ~/antigen.zsh
 antigen use oh-my-zsh
@@ -28,6 +30,5 @@ antigen apply
 
 
 PROMPT="%F{green}%n%F{white}@%F{green}%m%F{white} in%F{yellow} %~ : %F{blue}"
-ssh-add ~/.ssh/id_dsa.archivas_weak
 ssh-add ~/.ssh/id_rsa.hds_weak
 ssh-add ~/.ssh/id_rsa_ajacks

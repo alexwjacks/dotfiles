@@ -84,7 +84,7 @@ super + Return
 	urxvt
 
 alt + d
-	dmenu_run
+	rofi -show run
 
 super + i
     firefox
