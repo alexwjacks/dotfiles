@@ -26,7 +26,14 @@ antigen bundle command-not-found
 antigen bundle pip
 antigen bundle brew
 antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle aliases
+antigen bundle colored-man-pages
+antigen bundle tmux
+antigen bundle themes
+antigen bundle web-search
+antigen bundle vindle
 antigen apply
+
 
 
 PROMPT="%F{green}%n%F{white}@%F{green}%m%F{white} in%F{yellow} %~ : %F{blue}"
