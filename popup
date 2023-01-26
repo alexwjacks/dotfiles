@@ -4,21 +4,21 @@
 duration=3
 
 # define geometry
-barx=0
+barx=100
 bary=0
 barw=120
-barh=20
+barh=17
 
 # colors
 
-bar_bg='#ff242A36'
-bar_fg='#ffA7B2C4'
+bar_bg='#ff859900' #'#ff242A36'
+bar_fg='#ffffffff' #'#ffA7B2C4'
 
 # font used
-bar_font='xft:Terminus:pixelsize=12,xft:Inconsolata\ for\ Powerline:pixelsize=12'
+bar_font='Droid Sans-6'
 
 # put it all together
-baropt=" -g ${barw}x${barh}+${barx}+${bary} -B ${bar_bg} -F ${bar_fg}" # -f ${bar_font}"
+baropt=" -g ${barw}x${barh}+${barx}+${bary} -B ${bar_bg} -F ${bar_fg} # -f ${bar_font}"
 
 # actually make the popup
-(echo " $@"; sleep ${duration}) | bar ${baropt} #-g 120x100+10+10 -B ${bar_bg}
+(echo " $@"; sleep ${duration}) | lemonbar ${baropt} #-g 120x100+10+10 -B ${bar_bg}

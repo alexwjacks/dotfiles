@@ -14,9 +14,13 @@ feh
 gimp
 git
 golang
+herbstluftwm
 htop
 leiningen
 love
+mpc
+mpd
+ncmpcpp
 numix-icon-theme
 numix-icon-theme-circle
 openbox
@@ -24,7 +28,6 @@ python
 python2.7
 python3
 python-dev
-rxvt-unicode
 rxvt-unicode-256color
 ruby
 scala

@@ -1,2 +1,2 @@
 #!/bin/bash
-feh --bg-scale ~/dotfiles/alley.jpg
+feh --bg-fill ~/dotfiles/wallpapers/36-rain-wallpaper-drops.jpg
