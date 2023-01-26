@@ -85,15 +85,15 @@ hc keybind $Mod-Shift-k shift up
 hc keybind $Mod-Shift-l shift right
 
 hc set frame_padding 0
-hc set frame_gap 7
-hc set window_gap 3
+hc set frame_gap 10
+hc set window_gap 0
+
 # color
 hc set frame_border_active_color '#000000'
 hc set frame_border_normal_color '#000000'
 hc set frame_bg_normal_color  '#018759'
 # '#07778C'
 hc set frame_bg_active_color '#859900'
-#hc set frame_border_inner_color '#ffffff'
 hc set frame_border_width 5
 #hc set frame_border_inner_width 2
 hc set window_border_width 5
@@ -127,10 +127,10 @@ panel=~/.config/herbstluftwm/panel2.sh
 [ -x "$panel" ] || panel=/etc/xdg/herbstluftwm/panel.sh
 for monitor in $(herbstclient list_monitors | cut -d: -f1) ; do
     # start it on each monitor
-    #$panel $monitor &
-    ~/dotfiles/barScriptHLWM $monitor &
-done
+    $panel $monitor &
+    ~/Repos/dotfiles/barScriptHLWM $monitor &
 xrdb .Xdefaults
+
 # give the monitor a bit of breathing room
 hc pad 0 20 5 5 5
 hc pad 1 20 5 5 5
